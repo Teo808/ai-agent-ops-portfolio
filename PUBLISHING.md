@@ -21,21 +21,33 @@ Suggested repo description:
 Practical AI agent operations portfolio: Hermes-style setup notes, memory system design, and workflow triage demo.
 ```
 
-## Before Publishing
+## Published Links
+
+GitHub repo:
+
+```text
+https://github.com/Teo808/ai-agent-ops-portfolio
+```
+
+Live portfolio site:
+
+```text
+https://teo808.github.io/ai-agent-ops-portfolio/
+```
+
+## Before Sending
 
 - Review every Markdown file for anything too personal.
-- Replace `[GitHub portfolio link]` in `application_message.md` after the repo exists.
+- Confirm the live portfolio site opens.
 - Attach or link a resume separately.
 - Keep the positioning as agent operations / deployment QA, not ML researcher.
 
 ## Suggested Git Commands
 
-After creating an empty GitHub repo:
+Repo has already been created and pushed. For future pushes:
 
 ```powershell
-git remote add origin https://github.com/YOUR_USERNAME/ai-agent-ops-portfolio.git
-git branch -M main
-git push -u origin main
+git push
 ```
 
 ## Nous Application Email
@@ -57,4 +69,3 @@ Include:
 - Resume/CV
 - Portfolio link
 - Cover letter or short email from `application_message.md`
-

@@ -2,6 +2,10 @@
 
 Portfolio for Forward Deployed Engineer / AI Agent Operations roles, with a focus on Hermes-style deployment, workflow reliability, memory systems, and operator-grade debugging.
 
+Live portfolio site: https://teo808.github.io/ai-agent-ops-portfolio/
+
+GitHub repo: https://github.com/Teo808/ai-agent-ops-portfolio
+
 ## Candidate Positioning
 
 I am most useful where AI agents meet real user environments: setup, provider routing, tool integrations, memory behavior, browser automation, workflow QA, documentation, and support engineering.
@@ -54,7 +58,9 @@ python .\demo\agent_workflow_demo.py
 
 ## Web Portfolio Page
 
-Open `index.html` locally, or publish this repo with GitHub Pages after pushing it to GitHub.
+Open `index.html` locally, or visit the live GitHub Pages site:
+
+https://teo808.github.io/ai-agent-ops-portfolio/
 
 ## Suggested GitHub Repo Name
 

@@ -18,18 +18,18 @@ Forward Deployed Engineer - Teo
 - GitHub portfolio link after publishing this repo
 - Short email below, or the longer cover letter in `application_message.md`
 
-## Portfolio Link Placeholder
+## Portfolio Links
 
-Replace this before sending:
+Live portfolio site:
 
 ```text
-[GitHub portfolio link]
+https://teo808.github.io/ai-agent-ops-portfolio/
 ```
 
-Recommended final format:
+GitHub repo:
 
 ```text
-Portfolio: https://github.com/YOUR_USERNAME/ai-agent-ops-portfolio
+https://github.com/Teo808/ai-agent-ops-portfolio
 ```
 
 ## Short Email To Send
@@ -44,7 +44,9 @@ The part of the role that stands out to me is deploying and adapting Hermes Agen
 
 I would love to be considered for Forward Deployed Engineer, or for any agent deployment, QA, support engineering, or operations role where I can help make Hermes work better in real user environments.
 
-Portfolio: [GitHub portfolio link]
+Portfolio: https://teo808.github.io/ai-agent-ops-portfolio/
+
+GitHub: https://github.com/Teo808/ai-agent-ops-portfolio
 
 Resume: attached
 
@@ -60,4 +62,3 @@ Teo
 - The email has a real GitHub link.
 - The resume is attached.
 - The application does not frame Teo as an ML researcher.
-

@@ -16,7 +16,8 @@ The part of the role that stands out to me is deploying and adapting Hermes Agen
 
 I would love to be considered for Forward Deployed Engineer, or for any agent deployment, QA, support engineering, or operations role where I can help make Hermes work better in real user environments.
 
-Portfolio: [GitHub portfolio link]
+Portfolio: https://teo808.github.io/ai-agent-ops-portfolio/
+GitHub: https://github.com/Teo808/ai-agent-ops-portfolio
 Resume: attached
 
 Thank you,
@@ -40,6 +41,6 @@ Thank you for your time,
 
 Teo
 
-Portfolio: [GitHub portfolio link]
+Portfolio: https://teo808.github.io/ai-agent-ops-portfolio/
+GitHub: https://github.com/Teo808/ai-agent-ops-portfolio
 Resume: attached
-
