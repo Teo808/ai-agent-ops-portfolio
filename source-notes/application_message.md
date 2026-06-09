@@ -8,13 +8,15 @@ Subject: Forward Deployed Engineer / AI Agent Operations - Matteo Stincone
 
 Hi Nous team,
 
-I am writing to apply for the Forward Deployed Engineer role. I am deeply interested in Hermes Agent and practical AI agent deployment, especially the part where agents have to work inside real environments rather than only in demos.
+I am writing to apply for the Forward Deployed Engineer role. I am really interested in Hermes Agent because it is the kind of AI work I keep getting pulled toward: agents that use tools, memory, browsers, providers, and real workflows instead of just looking good in a demo.
 
-I have been building, testing, and documenting workflows around Hermes-style agents, OpenRouter and OpenAI-compatible providers, local models, MCP/tool integrations, browser automation, Obsidian/Supermemory-style memory systems, and agent automation stacks. My strongest fit is not as an ML researcher; it is as someone who uses agent systems directly, breaks them, traces the failure path, documents what happened, and turns that into a better workflow.
+I do not want to oversell myself as a machine learning researcher. That is not the honest angle. My angle is that I actually use these systems. I test them, break them, trace what happened, and turn the messy parts into clearer workflows, notes, and checks.
 
-The part of the role that stands out to me is deploying and adapting Hermes Agent Enterprise in customer environments: integrating APIs and internal tools, debugging across infrastructure and orchestration layers, and improving reliability. That is the kind of practical AI work I want to do.
+I have been working around Hermes-style agents, Thunderhead, OpenRouter, OpenAI-compatible providers, local models, MCP/tool integrations, browser automation, Obsidian/Supermemory-style memory systems, and automation stacks. The part I like most is figuring out why something fails and making it easier for the next person to use.
 
-I would love to be considered for Forward Deployed Engineer, or for any agent deployment, QA, support engineering, or operations role where I can help make Hermes work better in real user environments. I attached a resume and built a small public portfolio specifically around this fit.
+The Forward Deployed Engineer role stood out because it is about deploying Hermes Agent Enterprise in real customer environments, integrating tools and APIs, debugging across layers, and improving reliability. That is exactly where I think I can be useful: not pretending the rough edges are not there, but finding them, explaining them, and helping fix them.
+
+I would love to be considered for Forward Deployed Engineer, or for any agent deployment, QA, support engineering, or operations role where I can help make Hermes work better in real environments. I attached a resume and built a public portfolio specifically around this fit.
 
 Portfolio: https://teo808.github.io/ai-agent-ops-portfolio/
 GitHub: https://github.com/Teo808/ai-agent-ops-portfolio

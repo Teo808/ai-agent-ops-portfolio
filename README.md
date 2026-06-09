@@ -1,22 +1,22 @@
 # AI Agent Operations Portfolio
 
-Professional portfolio for Forward Deployed Engineer / AI Agent Operations roles, focused on Hermes-style deployment, workflow reliability, memory systems, and operator-grade debugging.
+This is my portfolio for Forward Deployed Engineer / AI Agent Operations roles. It is focused on the practical side of agent deployment: setup, tools, memory, browser workflows, provider routing, debugging, and documentation.
 
 Live portfolio site: https://teo808.github.io/ai-agent-ops-portfolio/
 
 GitHub repo: https://github.com/Teo808/ai-agent-ops-portfolio
 
-## Candidate Positioning
+## My Positioning
 
-I am most useful where AI agents meet real user environments: setup, provider routing, tool integrations, memory behavior, browser automation, workflow QA, documentation, and support engineering.
+I am most useful where AI agents meet real user environments: setup, provider routing, tool integrations, memory behavior, browser automation, workflow QA, documentation, and support.
 
-This is intentionally not a machine learning research portfolio. The value here is practical deployment judgment: using agent systems directly, finding where they break, reducing ambiguity, and turning messy failures into repeatable checks.
+This is intentionally not a machine learning research portfolio. I am not trying to pretend I am the model-training guy. My value is more practical: I use agent systems directly, find where they break, reduce the confusion, and turn messy failures into repeatable checks.
 
-## Callback Thesis
+## Why This Is The Angle
 
 Most agent demos look impressive when everything is controlled. The real work starts when the agent has to run in a messy environment with real users, brittle tools, unclear memory, changing providers, and incomplete documentation.
 
-This portfolio shows the part I am strongest at: testing real workflows, reproducing failures, documenting what happened, and turning that field evidence into better deployment habits.
+That is the part I am strongest at: testing real workflows, reproducing failures, documenting what happened, and turning that into better setup, support, and product feedback.
 
 ## Best-Fit Role
 
@@ -26,7 +26,7 @@ I am aiming for roles where I can help deploy, test, troubleshoot, document, and
 
 ## Role Alignment
 
-| Nous Forward Deployed Engineer need | Portfolio evidence |
+| What Nous needs | What I can show |
 | --- | --- |
 | Deploy and adapt Hermes Agent Enterprise | Hermes-style setup notes and operational testing checklist |
 | Integrate APIs, tools, and internal systems | MCP/tool integration and provider-routing test coverage |
@@ -62,9 +62,9 @@ Forward deployed agent work is not only about writing code. It is also about mak
 - integrating tools and APIs
 - debugging auth, memory, browser, provider, and orchestration issues
 - documenting reproducible failure paths
-- improving the product from field evidence
+- improving the product from real issues users run into
 
-That is the edge this portfolio is built to show.
+That is the edge I am trying to show here.
 
 ## Fast Review Path
 
@@ -88,4 +88,4 @@ https://teo808.github.io/ai-agent-ops-portfolio/
 
 ## One-Line Bio
 
-AI agent operations candidate focused on Hermes-style deployment, memory systems, workflow QA, and practical agent reliability.
+I test and improve AI agent workflows where tools, memory, providers, browsers, setup, and real users all collide.
