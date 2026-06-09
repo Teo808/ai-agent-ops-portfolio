@@ -1,29 +1,60 @@
 # AI Agent Operations Portfolio
 
-Portfolio for Forward Deployed Engineer / AI Agent Operations roles.
+Portfolio for Forward Deployed Engineer / AI Agent Operations roles, with a focus on Hermes-style deployment, workflow reliability, memory systems, and operator-grade debugging.
 
-## Positioning
+## Candidate Positioning
 
-I am most useful where AI agents meet real user environments: setup, tool integrations, memory systems, browser automation, provider routing, debugging, documentation, and workflow QA.
+I am most useful where AI agents meet real user environments: setup, provider routing, tool integrations, memory behavior, browser automation, workflow QA, documentation, and support engineering.
 
-This portfolio is intentionally practical. It is not a machine learning research portfolio. It shows how I think about deploying, testing, breaking, documenting, and improving agent workflows in the wild.
+This is intentionally not a machine learning research portfolio. The value here is practical deployment judgment: using agent systems directly, finding where they break, reducing ambiguity, and turning messy failures into repeatable checks.
+
+## Best-Fit Role
+
+Forward Deployed Engineer / AI Agent Operations
+
+I am aiming for roles where I can help deploy, test, troubleshoot, document, and improve AI agents inside real workflows.
 
 ## Portfolio Pieces
 
-1. [Hermes / AI Agent Setup Notes](./01-hermes-agent-setup-notes.md)
-   - Notes for testing agent installation, provider configuration, MCP-style integrations, memory, and messaging workflows.
+### 1. Hermes / AI Agent Setup Notes
 
-2. [Obsidian + Supermemory-Style Memory System Plan](./02-obsidian-memory-system-plan.md)
-   - A practical design for personal/project memory that supports recall, source tracking, and agent handoff.
+[Read the setup notes](./01-hermes-agent-setup-notes.md)
 
-3. [Small Agent Workflow Demo](./03-agent-workflow-demo.md)
-   - A simple local demo showing how an agent operations workflow can triage a deployment issue, choose checks, and produce a support-ready report.
+Practical notes for testing agent installation, provider configuration, MCP-style integrations, memory behavior, browser automation, messaging surfaces, and failure reporting.
+
+### 2. Obsidian + Supermemory-Style Memory System Plan
+
+[Read the memory system plan](./02-obsidian-memory-system-plan.md)
+
+A design for human-readable and agent-readable memory that handles project scoping, source labels, currentness, confidence, and agent handoff.
+
+### 3. Small Agent Workflow Demo
+
+[Read the demo notes](./03-agent-workflow-demo.md) or run [the Python script](./demo/agent_workflow_demo.py)
+
+A small standard-library Python demo that takes an ambiguous agent support scenario, classifies it, chooses verification checks, and produces an operator-friendly report.
 
 ## Why This Matches Forward Deployed Engineering
 
-The Nous Forward Deployed Engineer role focuses on adapting Hermes Agent Enterprise inside customer environments, integrating APIs and internal tooling, debugging across infrastructure/orchestration/model layers, and improving deployment reliability.
+Forward deployed agent work is not only about writing code. It is also about making complex systems usable in real environments:
 
-My edge is hands-on agent operations: I use these systems directly, notice where they break, document the failure path, and turn messy workflows into repeatable checks.
+- understanding user workflows
+- integrating tools and APIs
+- debugging auth, memory, browser, provider, and orchestration issues
+- documenting reproducible failure paths
+- improving the product from field evidence
+
+That is the edge this portfolio is built to show.
+
+## Run The Demo
+
+```powershell
+python .\demo\agent_workflow_demo.py
+```
+
+## Web Portfolio Page
+
+Open `index.html` locally, or publish this repo with GitHub Pages after pushing it to GitHub.
 
 ## Suggested GitHub Repo Name
 
@@ -32,4 +63,3 @@ My edge is hands-on agent operations: I use these systems directly, notice where
 ## Suggested One-Line Bio
 
 AI agent operations candidate focused on Hermes-style deployment, memory systems, workflow QA, and practical agent reliability.
-
