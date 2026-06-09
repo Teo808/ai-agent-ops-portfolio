@@ -2,17 +2,16 @@
 
 ## GitHub Repo
 
-Suggested repo name:
+Repo name:
 
 ```text
 ai-agent-ops-portfolio
 ```
 
-Suggested visibility:
+Visibility:
 
 ```text
-Public, if you are comfortable showing this to Nous.
-Private, if you want to review it first.
+Public
 ```
 
 Suggested repo description:
@@ -39,7 +38,7 @@ https://teo808.github.io/ai-agent-ops-portfolio/
 
 - Review every Markdown file for anything too personal.
 - Confirm the live portfolio site opens.
-- Attach or link a resume separately.
+- Attach the tailored resume PDF separately.
 - Keep the positioning as agent operations / deployment QA, not ML researcher.
 
 ## Suggested Git Commands
@@ -61,7 +60,7 @@ recruiting@nousresearch.com
 Subject:
 
 ```text
-Forward Deployed Engineer - Teo
+Forward Deployed Engineer / AI Agent Operations - Matteo Stincone
 ```
 
 Include:

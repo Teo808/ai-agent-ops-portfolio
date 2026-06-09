@@ -9,13 +9,14 @@ recruiting@nousresearch.com
 ## Subject
 
 ```text
-Forward Deployed Engineer - Teo
+Forward Deployed Engineer / AI Agent Operations - Matteo Stincone
 ```
 
 ## Attach / Include
 
-- Resume/CV
-- GitHub portfolio link after publishing this repo
+- Tailored resume PDF
+- Live portfolio site
+- Public GitHub repo
 - Short email below, or the longer cover letter in `application_message.md`
 
 ## Portfolio Links
@@ -42,7 +43,7 @@ I have been building, testing, and documenting workflows around Hermes-style age
 
 The part of the role that stands out to me is deploying and adapting Hermes Agent Enterprise in customer environments: integrating APIs and internal tools, debugging across infrastructure and orchestration layers, and improving reliability. That is the kind of practical AI work I want to do.
 
-I would love to be considered for Forward Deployed Engineer, or for any agent deployment, QA, support engineering, or operations role where I can help make Hermes work better in real user environments.
+I would love to be considered for Forward Deployed Engineer, or for any agent deployment, QA, support engineering, or operations role where I can help make Hermes work better in real user environments. I attached a resume and built a small public portfolio specifically around this fit.
 
 Portfolio: https://teo808.github.io/ai-agent-ops-portfolio/
 
@@ -52,7 +53,7 @@ Resume: attached
 
 Thank you,
 
-Teo
+Matteo Stincone
 
 ## Final Pre-Send Check
 
@@ -60,5 +61,5 @@ Teo
 - The README shows the three portfolio pieces.
 - The demo script is visible at `demo/agent_workflow_demo.py`.
 - The email has a real GitHub link.
-- The resume is attached.
+- The tailored resume PDF is attached.
 - The application does not frame Teo as an ML researcher.

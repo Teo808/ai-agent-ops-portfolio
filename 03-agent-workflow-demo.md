@@ -13,6 +13,10 @@ Show a simple AI agent operations workflow:
 
 This is not an LLM model demo. It is a workflow design demo for agent deployment and support operations.
 
+## Recruiter / Hiring Manager Summary
+
+The demo shows how I approach messy agent issues: classify the failure layer, choose small checks, and produce a report another operator or engineer can act on. It is deliberately small so the logic is easy to review.
+
 ## Run
 
 From this folder:
@@ -28,6 +32,15 @@ python .\demo\agent_workflow_demo.py
 - Producing verification steps.
 - Writing an operator-friendly report.
 - Separating confirmed checks from recommended next steps.
+
+## Categories Covered
+
+| Category | Example symptoms |
+| --- | --- |
+| `memory_scope` | Wrong project recall, stale context, broad personal history |
+| `tool_config` | Missing MCP tool, auth mismatch, transport/config errors |
+| `browser_workflow` | Page state, login, selector, CAPTCHA, or form issues |
+| `provider_routing` | Wrong model, endpoint, fallback, or OpenAI-compatible provider issue |
 
 ## Example Output
 
@@ -50,3 +63,6 @@ The issue appears related to memory scoping rather than model quality...
 
 Forward deployed agent work often means turning ambiguous user reports into concrete debugging paths. The value is not only writing code; it is making the system easier to operate, support, and improve.
 
+## Hiring Signal
+
+This is the operational muscle I would bring to Hermes Agent: do not guess, do not hand-wave, and do not hide uncertainty. Route the issue, run the smallest useful check, and write the result so the next person can move faster.

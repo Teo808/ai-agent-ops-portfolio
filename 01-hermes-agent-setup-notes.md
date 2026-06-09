@@ -1,10 +1,14 @@
 # Hermes / AI Agent Setup Notes
 
-Status: working portfolio note based on hands-on setup, testing, and troubleshooting patterns.
+Status: portfolio case study based on hands-on setup, testing, and troubleshooting patterns.
 
 ## Goal
 
 Build reliable setup and QA habits for Hermes-style AI agents that run across local machines, messaging surfaces, memory systems, model providers, and external tools.
+
+## Field Engineering Value
+
+This note is written from the perspective of a deployment tester: someone who wants the agent to survive real usage, not only a clean demo. The focus is on reproducibility, clear failure reports, and small verification steps that help engineering teams move faster.
 
 ## Areas I Test
 
@@ -14,6 +18,16 @@ Build reliable setup and QA habits for Hermes-style AI agents that run across lo
 - Browser automation: page navigation, form filling, screenshots, and failure recovery.
 - Messaging surfaces: Telegram/CLI-style usage, continuity across sessions, and readable final responses.
 - Workflow persistence: tasks, notes, lessons, retry plans, and status reports.
+
+## Deployment Test Matrix
+
+| Layer | What can break | Minimum useful check |
+| --- | --- | --- |
+| Provider | Wrong model, bad endpoint, missing key, fallback confusion | Run one known prompt against the selected provider |
+| Tooling | MCP server unavailable, auth mismatch, unclear tool name | List tools and run the smallest safe tool call |
+| Memory | Wrong project scope, stale global result, missing source | Run the same recall with project scope and profile context toggled |
+| Browser | Login wall, CAPTCHA, selector drift, slow page state | Capture screenshot/accessibility state at the failure point |
+| UX | Agent gives vague or overconfident answer | Require expected/actual behavior and verification language |
 
 ## Practical Checklist
 
@@ -72,3 +86,6 @@ The same query returns current-project setup notes in the top results.
 
 This is the work style I would bring to Hermes Agent deployment: use the system for real tasks, find the sharp edges, explain them clearly, and turn fixes into repeatable operational knowledge.
 
+## Hiring Signal
+
+Forward deployed work rewards people who can move between user reports, tooling, infrastructure symptoms, and clear documentation. This note shows that habit: reproduce first, isolate the layer, verify the fix, and preserve the lesson.

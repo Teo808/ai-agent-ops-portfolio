@@ -2,7 +2,7 @@
 
 To: recruiting@nousresearch.com
 
-Subject: Forward Deployed Engineer - Teo
+Subject: Forward Deployed Engineer / AI Agent Operations - Matteo Stincone
 
 ## Short Email
 
@@ -14,14 +14,14 @@ I have been building, testing, and documenting workflows around Hermes-style age
 
 The part of the role that stands out to me is deploying and adapting Hermes Agent Enterprise in customer environments: integrating APIs and internal tools, debugging across infrastructure and orchestration layers, and improving reliability. That is the kind of practical AI work I want to do.
 
-I would love to be considered for Forward Deployed Engineer, or for any agent deployment, QA, support engineering, or operations role where I can help make Hermes work better in real user environments.
+I would love to be considered for Forward Deployed Engineer, or for any agent deployment, QA, support engineering, or operations role where I can help make Hermes work better in real user environments. I attached a resume and built a small public portfolio specifically around this fit.
 
 Portfolio: https://teo808.github.io/ai-agent-ops-portfolio/
 GitHub: https://github.com/Teo808/ai-agent-ops-portfolio
 Resume: attached
 
 Thank you,
-Teo
+Matteo Stincone
 
 ## Cover Letter Version
 
@@ -39,7 +39,7 @@ I would be grateful to be considered for Forward Deployed Engineer, or for any a
 
 Thank you for your time,
 
-Teo
+Matteo Stincone
 
 Portfolio: https://teo808.github.io/ai-agent-ops-portfolio/
 GitHub: https://github.com/Teo808/ai-agent-ops-portfolio
