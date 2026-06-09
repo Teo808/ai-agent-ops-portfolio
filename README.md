@@ -38,19 +38,19 @@ I am aiming for roles where I can help deploy, test, troubleshoot, document, and
 
 ### 1. Hermes / AI Agent Setup Notes
 
-[Read the setup notes](./01-hermes-agent-setup-notes.md)
+[Read the styled setup notes](https://teo808.github.io/ai-agent-ops-portfolio/setup-notes.html)
 
 Practical notes for testing agent installation, provider configuration, MCP-style integrations, memory behavior, browser automation, messaging surfaces, and failure reporting.
 
 ### 2. Obsidian + Supermemory-Style Memory System Plan
 
-[Read the memory system plan](./02-obsidian-memory-system-plan.md)
+[Read the styled memory system plan](https://teo808.github.io/ai-agent-ops-portfolio/memory-system.html)
 
 A design for human-readable and agent-readable memory that handles project scoping, source labels, currentness, confidence, and agent handoff.
 
 ### 3. Small Agent Workflow Demo
 
-[Read the demo notes](./03-agent-workflow-demo.md) or run [the Python script](./demo/agent_workflow_demo.py)
+[Read the styled demo notes](https://teo808.github.io/ai-agent-ops-portfolio/workflow-demo.html) or run [the Python script](./demo/agent_workflow_demo.py)
 
 A small standard-library Python demo that takes an ambiguous agent support scenario, classifies it, chooses verification checks, and produces an operator-friendly report.
 
@@ -70,8 +70,8 @@ That is the edge this portfolio is built to show.
 
 If you only have five minutes:
 
-1. Read the [Candidate Profile](./CANDIDATE_PROFILE.md).
-2. Skim the [Hermes / AI Agent Setup Notes](./01-hermes-agent-setup-notes.md).
+1. Read the [Candidate Profile](https://teo808.github.io/ai-agent-ops-portfolio/candidate-profile.html).
+2. Skim the [Hermes / AI Agent Setup Notes](https://teo808.github.io/ai-agent-ops-portfolio/setup-notes.html).
 3. Run the [Agent Workflow Demo](./demo/agent_workflow_demo.py).
 
 ## Run The Demo
