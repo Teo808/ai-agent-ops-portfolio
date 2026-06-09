@@ -62,4 +62,4 @@ Matteo Stincone
 - The demo script is visible at `demo/agent_workflow_demo.py`.
 - The email has a real GitHub link.
 - The tailored resume PDF is attached.
-- The application does not frame Teo as an ML researcher.
+- The application does not frame Matteo as an ML researcher.

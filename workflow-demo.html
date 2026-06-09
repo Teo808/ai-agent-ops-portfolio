@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matteo Stincone | Agent Workflow Demo</title>
+  <meta name="description" content="Styled agent workflow demo for Matteo Stincone's AI Agent Operations portfolio.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <nav class="top-nav" aria-label="Portfolio navigation">
+      <a href="./index.html">Home</a>
+      <a href="./candidate-profile.html">Profile</a>
+      <a href="./setup-notes.html">Setup Notes</a>
+      <a href="./memory-system.html">Memory Plan</a>
+      <a href="./application.html">Application</a>
+    </nav>
+
+    <header class="page-hero">
+      <div class="eyebrow">Case Study 03</div>
+      <h1>I turn vague agent failures into useful debugging paths.</h1>
+      <p class="lead">
+        This small Python demo accepts a deployment/support scenario, classifies
+        the likely issue, chooses practical checks, and produces an operator-ready report.
+      </p>
+    </header>
+
+    <section class="content-band">
+      <h2>Run It</h2>
+      <pre><code>python .\demo\agent_workflow_demo.py</code></pre>
+      <p>
+        This is not an LLM model demo. It is a workflow design demo for agent
+        deployment and support operations.
+      </p>
+    </section>
+
+    <section class="matrix-section">
+      <h2>Categories Covered</h2>
+      <div class="matrix">
+        <div><strong>memory_scope</strong><span>Wrong project recall, stale context, or broad personal history.</span></div>
+        <div><strong>tool_config</strong><span>Missing MCP tool, auth mismatch, or transport/config errors.</span></div>
+        <div><strong>browser_workflow</strong><span>Page state, login, selector, CAPTCHA, or form issues.</span></div>
+        <div><strong>provider_routing</strong><span>Wrong model, endpoint, fallback, or provider issue.</span></div>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Example Output</h2>
+      <pre><code>Scenario: Hermes Agent cannot recall project-specific setup notes after a tool config change.
+Likely category: memory_scope
+Priority: high
+
+Recommended checks:
+- Confirm the active project/container scope.
+- Run the same recall query with and without profile context.
+- Check whether stale global memories are outranking project memories.
+- Verify the final answer cites the project-specific source.</code></pre>
+    </section>
+
+    <section class="callout">
+      <h2>Hiring Signal</h2>
+      <p>
+        This is the operational muscle I would bring to Hermes Agent: do not guess,
+        do not hand-wave, and do not hide uncertainty. Route the issue, run the
+        smallest useful check, and write the result so the next person can move faster.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

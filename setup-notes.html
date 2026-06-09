@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matteo Stincone | Hermes Agent Setup Notes</title>
+  <meta name="description" content="Styled Hermes-style AI agent setup notes for Matteo Stincone's Forward Deployed Engineer portfolio.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <nav class="top-nav" aria-label="Portfolio navigation">
+      <a href="./index.html">Home</a>
+      <a href="./candidate-profile.html">Profile</a>
+      <a href="./memory-system.html">Memory Plan</a>
+      <a href="./workflow-demo.html">Demo</a>
+      <a href="./application.html">Application</a>
+    </nav>
+
+    <header class="page-hero">
+      <div class="eyebrow">Case Study 01</div>
+      <h1>I test AI agents like they have to survive real deployment.</h1>
+      <p class="lead">
+        My Hermes-style setup notes focus on provider setup, MCP/tool integrations,
+        memory behavior, browser automation, messaging surfaces, and failure reporting.
+      </p>
+    </header>
+
+    <section class="content-band">
+      <h2>Field Engineering Value</h2>
+      <p>
+        I look at agent setup from the deployment tester's side. I want the agent
+        to survive real usage, not only a clean demo. That means reproducibility,
+        clear failure reports, and small verification steps that help engineering
+        teams move faster.
+      </p>
+    </section>
+
+    <section class="detail-grid">
+      <article class="detail-panel">
+        <span>Areas I test</span>
+        <ul class="evidence-list compact">
+          <li>Nous Portal, OpenRouter, local model endpoints, and OpenAI-compatible APIs.</li>
+          <li>Project memory, personal memory, recall quality, source labels, and stale memories.</li>
+          <li>MCP/tool discovery, auth, transport errors, server availability, and naming clarity.</li>
+          <li>Browser navigation, form filling, screenshots, and failure recovery.</li>
+        </ul>
+      </article>
+      <article class="detail-panel">
+        <span>What I document</span>
+        <ul class="evidence-list compact">
+          <li>The exact failure message.</li>
+          <li>The command or UI path that reproduced it.</li>
+          <li>The fix and the verification step.</li>
+          <li>The lesson that should become a checklist.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="matrix-section">
+      <h2>Deployment Test Matrix</h2>
+      <div class="matrix">
+        <div><strong>Provider</strong><span>Wrong model, bad endpoint, missing key, or fallback confusion.</span></div>
+        <div><strong>Tooling</strong><span>MCP server unavailable, auth mismatch, or unclear tool name.</span></div>
+        <div><strong>Memory</strong><span>Wrong project scope, stale global result, or missing source.</span></div>
+        <div><strong>Browser</strong><span>Login wall, CAPTCHA, selector drift, or slow page state.</span></div>
+      </div>
+    </section>
+
+    <section class="callout">
+      <h2>Hiring Signal</h2>
+      <p>
+        Forward deployed work rewards people who can move between user reports,
+        tooling, infrastructure symptoms, and clear documentation. This is how I work:
+        reproduce first, isolate the layer, verify the fix, and preserve the lesson.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
