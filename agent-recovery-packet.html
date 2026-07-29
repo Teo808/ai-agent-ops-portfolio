@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent recovery packet | Matteo Stincone</title>
+  <meta name="description" content="A small recovery packet checklist for AI agent workflows that stop before finishing.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AI workflow QA</div>
+      <h1>Agent recovery packet</h1>
+      <p class="lead">When an AI agent cannot finish a real workflow, it should leave the next person closer to done.</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./source-notes/04-agent-recovery-packet.md">Markdown source</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>The checklist</h2>
+      <p>A useful handoff does not need a long transcript. It needs a small recovery packet that answers six questions.</p>
+      <ol class="evidence-list">
+        <li><strong>What did the agent try?</strong> List the main steps in plain language.</li>
+        <li><strong>What changed?</strong> Say what the agent actually changed, submitted, saved, moved, deleted, drafted, or uploaded. If nothing changed, say that too.</li>
+        <li><strong>What is still open?</strong> Name the unfinished pieces so the next person does not have to infer them.</li>
+        <li><strong>What blocked it?</strong> Use the exact blocker, such as CAPTCHA, two-factor login, a disabled upload button, legal consent, missing details, or an unclear form question.</li>
+        <li><strong>What should the user do next?</strong> Give the next action as a short instruction, not a general suggestion.</li>
+        <li><strong>What should the next agent check first?</strong> Keep the next run from starting over.</li>
+      </ol>
+    </section>
+
+    <section class="proof">
+      <h2>Example</h2>
+      <div class="proof-grid">
+        <p>Opened the application page, checked the task details, created the needed file, tried the normal upload path, and tried the drop zone upload path.</p>
+        <p>The file was created locally, but the portal did not accept the upload. Nothing was submitted.</p>
+        <p>The user still needs to upload the PDF, review the optional form section, and click Submit.</p>
+        <p>First check whether the confirmation page is visible. If not, check whether the file is still attached. Do not recreate the file unless the source changed.</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Why this matters</h2>
+      <p>A failed workflow is not automatically wasted work. It becomes wasted work when the handoff is unclear.</p>
+      <p>For support, QA, operations, and implementation work, the recovery packet is the difference between a clean continuation and a mystery someone else has to untangle.</p>
+      <p>The simple standard is this: if the agent stops, the next person should know what happened, what changed, what is blocked, and where to continue.</p>
+    </section>
+  </main>
+</body>
+</html>

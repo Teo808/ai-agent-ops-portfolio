@@ -42,6 +42,12 @@ A design for project-scoped, source-labeled agent memory. Covers how to prevent 
 
 A pure standard-library Python demo that takes an ambiguous agent failure, classifies the likely layer (memory, tools, browser, provider), and produces a structured operator report.
 
+### 4. Agent recovery packet
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/agent-recovery-packet.html) - [Markdown source](./source-notes/04-agent-recovery-packet.md)
+
+A short checklist for what an agent should leave behind when it cannot finish a workflow: what it tried, what changed, what is still open, what blocked it, what the user should do next, and what the next run should check first.
+
 ## Run The Demo
 
 ```
