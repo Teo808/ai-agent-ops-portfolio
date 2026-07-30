@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browser automation preflight | Matteo Stincone</title>
+  <meta name="description" content="A practical checklist for browser automation before an agent acts inside signed in accounts or real workflows.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AI workflow QA</div>
+      <h1>Browser automation preflight</h1>
+      <p class="lead">Before an agent clicks inside a real account, it should prove the browser, account, action boundary, and result.</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./source-notes/05-browser-automation-preflight.md">Markdown source</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>The preflight</h2>
+      <p>Browser automation is only useful when it is acting in the right account, on the right page, with a clear idea of what it is allowed to change.</p>
+      <ol class="evidence-list">
+        <li><strong>Confirm the browser context.</strong> Check the URL, page title, visible account signals, and whether the tab is a real target tab instead of a blank or extension page.</li>
+        <li><strong>Confirm the account.</strong> Use the profile menu, workspace name, store name, candidate profile, or other page proof before making a change.</li>
+        <li><strong>Confirm the action boundary.</strong> Know whether the agent may draft, upload, submit, send, publish, or only save for review.</li>
+        <li><strong>Check for real blockers.</strong> Retry normal friction, but stop for CAPTCHA, two factor login, legal consent, sensitive personal data, payment requests, assessments, or questions that would require guessing.</li>
+        <li><strong>Verify the result.</strong> Look for a confirmation page, permalink, activity page, upload success message, or portal status before claiming success.</li>
+        <li><strong>Leave a clean handoff.</strong> Record what was tried, what changed, what is still open, the blocker, and what the next run should check first.</li>
+      </ol>
+    </section>
+
+    <section class="proof">
+      <h2>What I watch for</h2>
+      <div class="proof-grid">
+        <p>A launch command is not proof of control. The agent needs page level evidence.</p>
+        <p>A signed in site still needs account proof before a send, submit, or publish click.</p>
+        <p>A failed upload is usually friction first. CAPTCHA, legal consent, and sensitive data are stop signs.</p>
+        <p>If the result is not visible afterward, the honest status is unverified.</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Why this matters</h2>
+      <p>The risky part of browser automation is not opening the page. It is acting with confidence when the context is wrong or the result was never verified.</p>
+      <p>This checklist is a small way to keep agent workflows useful for support, QA, operations, and implementation work. It protects the user, and it gives the next person enough state to continue without starting over.</p>
+    </section>
+  </main>
+</body>
+</html>

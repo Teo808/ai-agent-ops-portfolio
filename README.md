@@ -48,6 +48,12 @@ A pure standard-library Python demo that takes an ambiguous agent failure, class
 
 A short checklist for what an agent should leave behind when it cannot finish a workflow: what it tried, what changed, what is still open, what blocked it, what the user should do next, and what the next run should check first.
 
+### 5. Browser automation preflight
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/browser-automation-preflight.html) - [Markdown source](./source-notes/05-browser-automation-preflight.md)
+
+A practical checklist for browser automation before an agent acts inside signed in accounts or real workflows. It covers context proof, account proof, action boundaries, blockers, verification, and handoffs.
+
 ## Run The Demo
 
 ```
@@ -62,7 +68,8 @@ Five minutes:
 
 1. [Candidate Profile](https://teo808.github.io/ai-agent-ops-portfolio/candidate-profile.html) - positioning and what I can point to
 2. [Setup Notes](https://teo808.github.io/ai-agent-ops-portfolio/setup-notes.html) - how I think about Hermes Agent deployment testing
-3. Run the demo script
+3. [Browser automation preflight](https://teo808.github.io/ai-agent-ops-portfolio/browser-automation-preflight.html) - how I check account safety before real browser actions
+4. Run the demo script
 
 ---
 
