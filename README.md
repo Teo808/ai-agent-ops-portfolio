@@ -54,6 +54,12 @@ A short checklist for what an agent should leave behind when it cannot finish a 
 
 A practical checklist for browser automation before an agent acts inside signed in accounts or real workflows. It covers context proof, account proof, action boundaries, blockers, verification, and handoffs.
 
+### 6. Support handoff signal log
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/support-handoff-signal.html) - [Markdown source](./source-notes/06-support-handoff-signal.md)
+
+A short public note on what useful AI workflow QA comments keep pointing back to: state, blockers, and clean handoffs.
+
 ## Run The Demo
 
 ```
@@ -69,7 +75,8 @@ Five minutes:
 1. [Candidate Profile](https://teo808.github.io/ai-agent-ops-portfolio/candidate-profile.html) - positioning and what I can point to
 2. [Setup Notes](https://teo808.github.io/ai-agent-ops-portfolio/setup-notes.html) - how I think about Hermes Agent deployment testing
 3. [Browser automation preflight](https://teo808.github.io/ai-agent-ops-portfolio/browser-automation-preflight.html) - how I check account safety before real browser actions
-4. Run the demo script
+4. [Support handoff signal log](https://teo808.github.io/ai-agent-ops-portfolio/support-handoff-signal.html) - what recent workflow QA engagement keeps pointing back to
+5. Run the demo script
 
 ---
 

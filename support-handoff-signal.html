@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support handoff signal log | Matteo Stincone</title>
+  <meta name="description" content="A short public note on what useful AI workflow QA comments keep pointing back to: state, blockers, and clean handoffs.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AI support and workflow QA</div>
+      <h1>Support handoff signal log</h1>
+      <p class="lead">The AI agent conversations that seem to matter are not really about flashy demos. They are about what happens after the workflow stops.</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./source-notes/06-support-handoff-signal.md">Markdown source</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>What people respond to</h2>
+      <p>The useful comments are concrete. What did the agent try? What changed? Where did it stop? What should support or the next operator check first?</p>
+      <p>That makes sense. Most real automation failures are messy handoffs: a file did not upload, a browser session was not the right account, a form reached a security checkpoint, or a tool claimed success before anyone verified the result.</p>
+    </section>
+
+    <section class="proof">
+      <h2>The operator habit</h2>
+      <div class="proof-grid">
+        <p>Do not treat a failed run as a dead end.</p>
+        <p>Turn the run into a clean state report.</p>
+        <p>Say what changed, what did not change, and where to continue.</p>
+        <p>Say when nothing was verified instead of pretending the workflow finished.</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>How I would use this on a team</h2>
+      <p>If I were supporting an AI agent product, I would track repeated handoff failures the way support teams track repeated user issues.</p>
+      <p>When the same blocker shows up twice, it should become a clearer product state, a better support macro, a docs fix, or a regression check.</p>
+      <p>That is where AI workflow QA connects to support and implementation work. The value is not just catching the failure. It is making the next run easier to trust.</p>
+    </section>
+  </main>
+</body>
+</html>
