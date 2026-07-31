@@ -60,6 +60,12 @@ A practical checklist for browser automation before an agent acts inside signed 
 
 A short public note on what useful AI workflow QA comments keep pointing back to: state, blockers, and clean handoffs.
 
+### 7. Social signal triage loop
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/social-signal-triage.html) - [Markdown source](./source-notes/07-social-signal-triage.md)
+
+A practical loop for turning comments, replies, profile views, and recruiter signals into cleaner proof or a better next step.
+
 ## Run The Demo
 
 ```
@@ -76,7 +82,8 @@ Five minutes:
 2. [Setup Notes](https://teo808.github.io/ai-agent-ops-portfolio/setup-notes.html) - how I think about Hermes Agent deployment testing
 3. [Browser automation preflight](https://teo808.github.io/ai-agent-ops-portfolio/browser-automation-preflight.html) - how I check account safety before real browser actions
 4. [Support handoff signal log](https://teo808.github.io/ai-agent-ops-portfolio/support-handoff-signal.html) - what recent workflow QA engagement keeps pointing back to
-5. Run the demo script
+5. [Social signal triage loop](https://teo808.github.io/ai-agent-ops-portfolio/social-signal-triage.html) - how I decide whether to reply, wait, or turn a signal into proof
+6. Run the demo script
 
 ---
 
