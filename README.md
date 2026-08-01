@@ -66,6 +66,12 @@ A short public note on what useful AI workflow QA comments keep pointing back to
 
 A practical loop for turning comments, replies, profile views, and recruiter signals into cleaner proof or a better next step.
 
+### 8. Verified no-action rule
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/verified-no-action.html) - [Markdown source](./source-notes/08-verified-no-action.md)
+
+A short rule for stopping before a real click when the browser, account, boundary, or result cannot be verified.
+
 ## Run The Demo
 
 ```
@@ -83,7 +89,8 @@ Five minutes:
 3. [Browser automation preflight](https://teo808.github.io/ai-agent-ops-portfolio/browser-automation-preflight.html) - how I check account safety before real browser actions
 4. [Support handoff signal log](https://teo808.github.io/ai-agent-ops-portfolio/support-handoff-signal.html) - what recent workflow QA engagement keeps pointing back to
 5. [Social signal triage loop](https://teo808.github.io/ai-agent-ops-portfolio/social-signal-triage.html) - how I decide whether to reply, wait, or turn a signal into proof
-6. Run the demo script
+6. [Verified no-action rule](https://teo808.github.io/ai-agent-ops-portfolio/verified-no-action.html) - how I avoid claiming sends, posts, or applications when proof is missing
+7. Run the demo script
 
 ---
 

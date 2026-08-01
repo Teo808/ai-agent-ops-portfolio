@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verified no-action rule | Matteo Stincone</title>
+  <meta name="description" content="A short AI workflow QA note on when an agent should stop instead of taking an unverified action.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AI workflow QA</div>
+      <h1>Verified no-action rule</h1>
+      <p class="lead">Sometimes the safest automation result is a clean no-action report. If the agent cannot prove the session, account, action boundary, or result, it should stop before the click.</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./source-notes/08-verified-no-action.md">Markdown source</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>When to stop</h2>
+      <p>The agent should stop when it cannot prove the controlled browser is the real target session, the visible account is correct, the next click is allowed, and the page is not showing a user-only checkpoint.</p>
+      <p>If the result cannot be checked afterward, the honest status is not verified.</p>
+    </section>
+
+    <section class="proof">
+      <h2>What the report should say</h2>
+      <div class="proof-grid">
+        <p>What the agent tried.</p>
+        <p>The exact proof it could not get.</p>
+        <p>What it did not do because proof was missing.</p>
+        <p>What the next run should check first.</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Example</h2>
+      <p>The agent tried to open the social account through the approved browser path. The browser control layer timed out before LinkedIn or X could be verified. No post, DM, comment, follow, application, or email was sent. The next run should start by checking browser tabs through the approved session, then verify the target account before any outbound action.</p>
+    </section>
+
+    <section class="callout">
+      <h2>Why this matters</h2>
+      <p>Automation gets dangerous when it treats partial access like proof. A verified no-action report is better than a fake success claim, especially around job applications, recruiter messages, social posts, and real accounts.</p>
+    </section>
+  </main>
+</body>
+</html>
