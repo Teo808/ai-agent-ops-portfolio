@@ -72,6 +72,12 @@ A practical loop for turning comments, replies, profile views, and recruiter sig
 
 A short rule for stopping before a real click when the browser, account, boundary, or result cannot be verified.
 
+### 9. Relationship outreach cooldown rule
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/outreach-cooldown-rule.html) - [Markdown source](./source-notes/09-outreach-cooldown-rule.md)
+
+A short rule for checking outreach history before sending another recruiter, company, or social message.
+
 ## Run The Demo
 
 ```
@@ -90,7 +96,8 @@ Five minutes:
 4. [Support handoff signal log](https://teo808.github.io/ai-agent-ops-portfolio/support-handoff-signal.html) - what recent workflow QA engagement keeps pointing back to
 5. [Social signal triage loop](https://teo808.github.io/ai-agent-ops-portfolio/social-signal-triage.html) - how I decide whether to reply, wait, or turn a signal into proof
 6. [Verified no-action rule](https://teo808.github.io/ai-agent-ops-portfolio/verified-no-action.html) - how I avoid claiming sends, posts, or applications when proof is missing
-7. Run the demo script
+7. [Relationship outreach cooldown rule](https://teo808.github.io/ai-agent-ops-portfolio/outreach-cooldown-rule.html) - how I avoid repeat-contacting the same person or company when waiting is the better move
+8. Run the demo script
 
 ---
 
