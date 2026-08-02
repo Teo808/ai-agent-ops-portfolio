@@ -78,10 +78,17 @@ A short rule for stopping before a real click when the browser, account, boundar
 
 A short rule for checking outreach history before sending another recruiter, company, or social message.
 
+### 10. Browser preflight decision demo
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/preflight-decision-demo.html) - [Python script](./demo/browser_preflight_report.py) - [Markdown source](./source-notes/10-browser-preflight-decision-demo.md)
+
+A small Python demo for deciding whether browser automation should send, submit, publish, or stop based on context proof, account proof, action boundary, blocker state, and result proof.
+
 ## Run The Demo
 
 ```
 python demo/agent_workflow_demo.py
+python demo/browser_preflight_report.py --all
 ```
 
 No dependencies. Standard library only.
@@ -97,7 +104,8 @@ Five minutes:
 5. [Social signal triage loop](https://teo808.github.io/ai-agent-ops-portfolio/social-signal-triage.html) - how I decide whether to reply, wait, or turn a signal into proof
 6. [Verified no-action rule](https://teo808.github.io/ai-agent-ops-portfolio/verified-no-action.html) - how I avoid claiming sends, posts, or applications when proof is missing
 7. [Relationship outreach cooldown rule](https://teo808.github.io/ai-agent-ops-portfolio/outreach-cooldown-rule.html) - how I avoid repeat-contacting the same person or company when waiting is the better move
-8. Run the demo script
+8. [Browser preflight decision demo](https://teo808.github.io/ai-agent-ops-portfolio/preflight-decision-demo.html) - a small executable send or stop check
+9. Run the demo scripts
 
 ---
 

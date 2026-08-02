@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browser preflight decision demo | Matteo Stincone</title>
+  <meta name="description" content="A small Python demo for deciding whether browser automation should send, submit, publish, or stop.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AI workflow QA</div>
+      <h1>Browser preflight decision demo</h1>
+      <p class="lead">A small Python demo for deciding whether a browser automation workflow should send, submit, publish, or stop.</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./demo/browser_preflight_report.py">Python script</a>
+        <a href="./source-notes/10-browser-preflight-decision-demo.md">Markdown source</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>The decision rule</h2>
+      <p>Before an agent acts in a real account, it should be able to prove the browser context, the expected account, the action boundary, blocker state, and result proof.</p>
+      <p>If one of those is missing, the right answer is usually not another click. The right answer is a clean stop report with the first check for the next run.</p>
+    </section>
+
+    <section class="content-band">
+      <h2>What the script tests</h2>
+      <ol class="evidence-list">
+        <li>A social comment where the browser extension times out before account proof.</li>
+        <li>A signed-in page where one public comment is inside the boundary.</li>
+        <li>A job application flow that reaches a legal consent step and must stop for the user.</li>
+      </ol>
+    </section>
+
+    <section class="proof">
+      <h2>Why this is useful</h2>
+      <div class="proof-grid">
+        <p>It treats unknown account state as a stop condition, not a minor warning.</p>
+        <p>It separates routine friction from real blockers like legal consent or security checks.</p>
+        <p>It records the intended action and boundary before the risky click.</p>
+        <p>It gives support or the next operator a clear first check instead of a vague failure.</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Run it</h2>
+      <pre><code>python demo/browser_preflight_report.py --all</code></pre>
+      <p>The default scenario intentionally stops. That is the behavior I want from safe automation when the account cannot be verified.</p>
+    </section>
+  </main>
+</body>
+</html>
