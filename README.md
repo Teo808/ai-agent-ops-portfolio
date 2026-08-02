@@ -108,6 +108,12 @@ A small Python demo for deciding whether a job lead should be applied to, staged
 
 A small Python demo for separating installed tool health from active session proof before a workflow touches a real account.
 
+### 15. Real-account automation incident runbook
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/real-account-automation-incident-runbook.html) - [Python script](./demo/real_account_incident_runbook.py) - [Markdown source](./source-notes/15-real-account-automation-incident-runbook.md)
+
+A short runbook for handling browser or automation failures before a workflow touches a real account.
+
 ## Run The Demo
 
 ```
@@ -117,6 +123,7 @@ python demo/action_receipt_report.py --all
 python demo/browser_attach_health_check.py --all
 python demo/application_run_gate.py --all
 python demo/session_tool_health.py --all
+python demo/real_account_incident_runbook.py --all
 ```
 
 No dependencies. Standard library only.
@@ -137,7 +144,8 @@ Five minutes:
 10. [Browser attach health check demo](https://teo808.github.io/ai-agent-ops-portfolio/browser-attach-health-check.html) - how I separate browser health, target-page proof, account proof, and safety blockers
 11. [Application run gate demo](https://teo808.github.io/ai-agent-ops-portfolio/application-run-gate.html) - how I decide whether a job lead should be applied to, staged, saved, or rejected
 12. [Session tool health demo](https://teo808.github.io/ai-agent-ops-portfolio/session-tool-health.html) - how I separate server health from active session proof before a real-account action
-13. Run the demo scripts
+13. [Real-account automation incident runbook](https://teo808.github.io/ai-agent-ops-portfolio/real-account-automation-incident-runbook.html) - how I block risky account actions and leave a clean repair path
+14. Run the demo scripts
 
 ---
 

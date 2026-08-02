@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real-account automation incident runbook | Matteo Stincone</title>
+  <meta name="description" content="A short runbook for handling browser or automation failures before a workflow touches a real account.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AI workflow QA</div>
+      <h1>Real-account automation incident runbook</h1>
+      <p class="lead">A one-page runbook for the moment an agent workflow touches a real account but the browser session is not proven safe.</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./demo/real_account_incident_runbook.py">Python script</a>
+        <a href="./source-notes/15-real-account-automation-incident-runbook.md">Markdown source</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>The incident</h2>
+      <p>Some workflows are safe to keep running locally. Real-account workflows are different. If the next step is a post, DM, job application, recruiter message, file upload, or submit button, the agent needs proof of the browser, the account, the action boundary, and the result path.</p>
+      <p>If that proof is missing, the right move is not to click harder. The right move is to write the incident clearly, block risky actions, and leave the next repair step obvious.</p>
+    </section>
+
+    <section class="content-band">
+      <h2>The runbook</h2>
+      <ol class="evidence-list">
+        <li><strong>State what failed.</strong> Name the exact tool call, page, account proof, or confirmation step that failed.</li>
+        <li><strong>Scope what is blocked.</strong> Block sends, posts, follows, applications, uploads, and messages until verification returns.</li>
+        <li><strong>Keep the evidence small.</strong> Log the exact error, last safe page, visible account proof status, and duplicate-contact risk.</li>
+        <li><strong>Choose the safe decision.</strong> Stop, stage, save, or continue only with local proof work that does not touch the account.</li>
+        <li><strong>Give the repair path.</strong> Reload the browser tool, start a fresh session, or restart the gateway, then verify the target account before acting.</li>
+        <li><strong>Resume carefully.</strong> Check recent outreach and application history before sending anything from the recovered session.</li>
+      </ol>
+    </section>
+
+    <section class="content-band">
+      <h2>Example incident table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Evidence</th>
+            <th>Status</th>
+            <th>Decision</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Browser tab call timed out before account proof</td>
+            <td>Active session not verified</td>
+            <td>Block LinkedIn, X, job portal, and email account actions</td>
+          </tr>
+          <tr>
+            <td>Separate health test can list tools</td>
+            <td>Repair clue only</td>
+            <td>Do not treat this as permission to post or submit</td>
+          </tr>
+          <tr>
+            <td>Latest application target already received outreach</td>
+            <td>Duplicate-contact risk exists</td>
+            <td>Wait, or find a new safe target after verification returns</td>
+          </tr>
+          <tr>
+            <td>Local portfolio work is available</td>
+            <td>Safe fallback</td>
+            <td>Create proof, save a draft, and log the blocker honestly</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="proof">
+      <h2>Why this is useful</h2>
+      <div class="proof-grid">
+        <p>It stops fake success claims when the active session cannot prove a real account.</p>
+        <p>It protects recruiter and company relationships from duplicate or unsafe messages.</p>
+        <p>It gives support a clean recovery note instead of a vague browser failure.</p>
+        <p>It turns blocked automation into safe proof while the account path is repaired.</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Run it</h2>
+      <pre><code>python demo/real_account_incident_runbook.py --all</code></pre>
+      <p>The first example returns "BLOCK_REAL_ACCOUNT_ACTIONS_AND_DO_LOCAL_PROOF." That is the honest decision when the active browser session is not verified, even if another health check says the tool exists.</p>
+    </section>
+  </main>
+</body>
+</html>
