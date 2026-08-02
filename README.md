@@ -102,6 +102,12 @@ A small Python demo for deciding whether real-account browser automation can con
 
 A small Python demo for deciding whether a job lead should be applied to, staged, saved, or rejected before a workflow touches a real account.
 
+### 14. Session tool health demo
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/session-tool-health.html) - [Python script](./demo/session_tool_health.py) - [Markdown source](./source-notes/14-session-tool-health.md)
+
+A small Python demo for separating installed tool health from active session proof before a workflow touches a real account.
+
 ## Run The Demo
 
 ```
@@ -110,6 +116,7 @@ python demo/browser_preflight_report.py --all
 python demo/action_receipt_report.py --all
 python demo/browser_attach_health_check.py --all
 python demo/application_run_gate.py --all
+python demo/session_tool_health.py --all
 ```
 
 No dependencies. Standard library only.
@@ -129,7 +136,8 @@ Five minutes:
 9. [Action receipt report demo](https://teo808.github.io/ai-agent-ops-portfolio/action-receipt-report.html) - how I prove what actually happened after a risky workflow action
 10. [Browser attach health check demo](https://teo808.github.io/ai-agent-ops-portfolio/browser-attach-health-check.html) - how I separate browser health, target-page proof, account proof, and safety blockers
 11. [Application run gate demo](https://teo808.github.io/ai-agent-ops-portfolio/application-run-gate.html) - how I decide whether a job lead should be applied to, staged, saved, or rejected
-12. Run the demo scripts
+12. [Session tool health demo](https://teo808.github.io/ai-agent-ops-portfolio/session-tool-health.html) - how I separate server health from active session proof before a real-account action
+13. Run the demo scripts
 
 ---
 

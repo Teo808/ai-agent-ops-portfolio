@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session tool health demo | Matteo Stincone</title>
+  <meta name="description" content="A small Python demo for deciding whether a tool failure is safe to act through, should wait, or should become local proof.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AI workflow QA</div>
+      <h1>Session tool health demo</h1>
+      <p class="lead">A small Python demo for separating installed tool health from active session proof before a workflow touches a real account.</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./demo/session_tool_health.py">Python script</a>
+        <a href="./source-notes/14-session-tool-health.md">Markdown source</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>The problem</h2>
+      <p>A tool server can be healthy while the active agent session still cannot use it safely. That matters when the next action is a LinkedIn comment, X DM, job application, recruiter message, or any other real-account click.</p>
+      <p>If the current session cannot prove the page, account, boundary, and result path, a separate health check is only a repair clue. It is not permission to act.</p>
+    </section>
+
+    <section class="content-band">
+      <h2>What the script tests</h2>
+      <ol class="evidence-list">
+        <li>An active session times out, but a separate health check says the tool server exists.</li>
+        <li>An active session works and the account is verified.</li>
+        <li>The tool works, but the account is not verified.</li>
+        <li>The tool works, but duplicate outreach risk says to wait.</li>
+      </ol>
+    </section>
+
+    <section class="proof">
+      <h2>Why this is useful</h2>
+      <div class="proof-grid">
+        <p>It stops the agent from treating a tool list as proof of a safe account action.</p>
+        <p>It gives support a cleaner blocker report: active session, health test, account proof, and duplicate risk.</p>
+        <p>It preserves relationship safety when the smartest move is to wait.</p>
+        <p>It turns blocked browser work into safe local proof instead of fake social activity.</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Run it</h2>
+      <pre><code>python demo/session_tool_health.py --all</code></pre>
+      <p>The first example returns "STOP_ACCOUNT_ACTIONS_AND_DO_SAFE_LOCAL_PROOF." That is the right result when a real-account action is blocked, even if a separate health test says the tool server exists.</p>
+    </section>
+  </main>
+</body>
+</html>
