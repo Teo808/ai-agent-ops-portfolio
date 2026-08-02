@@ -90,12 +90,19 @@ A small Python demo for deciding whether browser automation should send, submit,
 
 A small Python demo for building a verification receipt after a workflow sends, submits, publishes, connects, or messages from a real account.
 
+### 12. Browser attach health check demo
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/browser-attach-health-check.html) - [Python script](./demo/browser_attach_health_check.py) - [Markdown source](./source-notes/12-browser-attach-health-check.md)
+
+A small Python demo for deciding whether real-account browser automation can continue, open the target page, or stop before any risky action.
+
 ## Run The Demo
 
 ```
 python demo/agent_workflow_demo.py
 python demo/browser_preflight_report.py --all
 python demo/action_receipt_report.py --all
+python demo/browser_attach_health_check.py --all
 ```
 
 No dependencies. Standard library only.
@@ -113,7 +120,8 @@ Five minutes:
 7. [Relationship outreach cooldown rule](https://teo808.github.io/ai-agent-ops-portfolio/outreach-cooldown-rule.html) - how I avoid repeat-contacting the same person or company when waiting is the better move
 8. [Browser preflight decision demo](https://teo808.github.io/ai-agent-ops-portfolio/preflight-decision-demo.html) - a small executable send or stop check
 9. [Action receipt report demo](https://teo808.github.io/ai-agent-ops-portfolio/action-receipt-report.html) - how I prove what actually happened after a risky workflow action
-10. Run the demo scripts
+10. [Browser attach health check demo](https://teo808.github.io/ai-agent-ops-portfolio/browser-attach-health-check.html) - how I separate browser health, target-page proof, account proof, and safety blockers
+11. Run the demo scripts
 
 ---
 

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browser attach health check demo | Matteo Stincone</title>
+  <meta name="description" content="A small Python demo for deciding whether real-account browser automation can continue safely.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AI workflow QA</div>
+      <h1>Browser attach health check demo</h1>
+      <p class="lead">A small Python demo for deciding whether a real-account browser workflow can continue, open the target page, or stop before any risky action.</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./demo/browser_attach_health_check.py">Python script</a>
+        <a href="./source-notes/12-browser-attach-health-check.md">Markdown source</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>The attach rule</h2>
+      <p>Before an agent acts inside LinkedIn, X, a job portal, or any real account, it has to prove the browser tool is attached, the target page is visible, the expected account is visible, and no hard stop blocker is present.</p>
+      <p>If the tab list times out, the workflow stops. If the extension is reachable but only shows a welcome tab, the next step is to open the target site in that same verified browser session and check the account before acting.</p>
+    </section>
+
+    <section class="content-band">
+      <h2>What the script tests</h2>
+      <ol class="evidence-list">
+        <li>The extension times out before any tab list returns.</li>
+        <li>The extension is connected, but only the welcome tab is visible.</li>
+        <li>LinkedIn is loaded, the expected account is visible, and no blocker is present.</li>
+        <li>X reaches an encrypted message passcode prompt before a DM can be sent.</li>
+      </ol>
+    </section>
+
+    <section class="proof">
+      <h2>Why this is useful</h2>
+      <div class="proof-grid">
+        <p>It stops the agent from treating a broken browser connection as a successful social action.</p>
+        <p>It separates extension health, target-page proof, account proof, and safety blockers.</p>
+        <p>It keeps user-approved fallbacks explicit instead of silently switching browsers.</p>
+        <p>It gives the next run a specific first check instead of a vague "browser failed" note.</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Run it</h2>
+      <pre><code>python demo/browser_attach_health_check.py --all</code></pre>
+      <p>The default scenario returns "STOP." That is the right result when the browser attach step times out before account proof.</p>
+    </section>
+  </main>
+</body>
+</html>
