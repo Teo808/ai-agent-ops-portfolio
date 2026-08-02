@@ -84,11 +84,18 @@ A short rule for checking outreach history before sending another recruiter, com
 
 A small Python demo for deciding whether browser automation should send, submit, publish, or stop based on context proof, account proof, action boundary, blocker state, and result proof.
 
+### 11. Action receipt report demo
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/action-receipt-report.html) - [Python script](./demo/action_receipt_report.py) - [Markdown source](./source-notes/11-action-receipt-report.md)
+
+A small Python demo for building a verification receipt after a workflow sends, submits, publishes, connects, or messages from a real account.
+
 ## Run The Demo
 
 ```
 python demo/agent_workflow_demo.py
 python demo/browser_preflight_report.py --all
+python demo/action_receipt_report.py --all
 ```
 
 No dependencies. Standard library only.
@@ -105,7 +112,8 @@ Five minutes:
 6. [Verified no-action rule](https://teo808.github.io/ai-agent-ops-portfolio/verified-no-action.html) - how I avoid claiming sends, posts, or applications when proof is missing
 7. [Relationship outreach cooldown rule](https://teo808.github.io/ai-agent-ops-portfolio/outreach-cooldown-rule.html) - how I avoid repeat-contacting the same person or company when waiting is the better move
 8. [Browser preflight decision demo](https://teo808.github.io/ai-agent-ops-portfolio/preflight-decision-demo.html) - a small executable send or stop check
-9. Run the demo scripts
+9. [Action receipt report demo](https://teo808.github.io/ai-agent-ops-portfolio/action-receipt-report.html) - how I prove what actually happened after a risky workflow action
+10. Run the demo scripts
 
 ---
 

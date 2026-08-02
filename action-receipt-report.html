@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Action receipt report demo | Matteo Stincone</title>
+  <meta name="description" content="A small Python demo for building verification receipts after real-account automation actions.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AI workflow QA</div>
+      <h1>Action receipt report demo</h1>
+      <p class="lead">A small Python demo for proving what happened after a workflow sends, submits, publishes, connects, or messages from a real account.</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./demo/action_receipt_report.py">Python script</a>
+        <a href="./source-notes/11-action-receipt-report.md">Markdown source</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>The receipt rule</h2>
+      <p>If a workflow touches a real account, the report should prove the expected account, visible account, intended action, boundary, confirmation, artifact URL, blocker state, and next step.</p>
+      <p>If those details are missing, the action is not verified. The honest report should say that instead of turning a click into a claimed result.</p>
+    </section>
+
+    <section class="content-band">
+      <h2>What the script tests</h2>
+      <ol class="evidence-list">
+        <li>A browser timeout before a social account can be verified.</li>
+        <li>A public comment with visible confirmation and a page URL.</li>
+        <li>An application that is staged but blocked at legal consent.</li>
+      </ol>
+    </section>
+
+    <section class="proof">
+      <h2>Why this is useful</h2>
+      <div class="proof-grid">
+        <p>It separates "clicked" from "verified."</p>
+        <p>It makes account proof part of the handoff instead of an assumption.</p>
+        <p>It records the allowed action boundary before the risky step.</p>
+        <p>It gives support or the next operator the first check instead of a vague success claim.</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Run it</h2>
+      <pre><code>python demo/action_receipt_report.py --all</code></pre>
+      <p>The default scenario intentionally returns "NOT VERIFIED." That is the right answer when browser control times out before account proof.</p>
+    </section>
+  </main>
+</body>
+</html>
