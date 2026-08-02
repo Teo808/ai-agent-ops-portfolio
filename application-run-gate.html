@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Application run gate demo | Matteo Stincone</title>
+  <meta name="description" content="A small Python demo for deciding whether a job lead should be applied to, staged, saved, or rejected.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AI workflow QA</div>
+      <h1>Application run gate demo</h1>
+      <p class="lead">A small Python demo for deciding whether a job lead should be applied to, staged, saved, or rejected before a workflow touches a real account.</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./demo/application_run_gate.py">Python script</a>
+        <a href="./source-notes/13-application-run-gate.md">Markdown source</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>The gate</h2>
+      <p>Before a job workflow submits anything, it should prove the lead is worth the action. Pay, schedule, commute, role fit, and legitimacy have to be clear enough. If the approved browser session is not verified, the workflow should stage the lead instead of pretending it applied.</p>
+      <p>This is built for an actor-first job search, where the income job supports auditions, self tapes, class, and creative work instead of crowding them out.</p>
+    </section>
+
+    <section class="content-band">
+      <h2>What the script tests</h2>
+      <ol class="evidence-list">
+        <li>A remote AI product support role that looks good but cannot be submitted because browser proof is missing.</li>
+        <li>A local admin role with missing schedule details.</li>
+        <li>A commission-only outreach role that should be rejected.</li>
+        <li>A far commute with vague flexibility.</li>
+        <li>A clear data and records role that can move to apply.</li>
+      </ol>
+    </section>
+
+    <section class="proof">
+      <h2>Why this is useful</h2>
+      <div class="proof-grid">
+        <p>It keeps the agent from padding application counts with weak leads.</p>
+        <p>It separates apply, stage, save, reject, and manual checkpoint decisions.</p>
+        <p>It protects acting time by making schedule and commute real gates.</p>
+        <p>It stops account actions when browser proof is missing.</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Run it</h2>
+      <pre><code>python demo/application_run_gate.py --all</code></pre>
+      <p>The first example returns "STAGE_NOT_SUBMIT." That is the right result when the role fits but the approved browser path is not verified.</p>
+    </section>
+  </main>
+</body>
+</html>
