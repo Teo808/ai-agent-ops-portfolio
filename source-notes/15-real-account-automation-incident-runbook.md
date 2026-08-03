@@ -22,6 +22,13 @@ That matters for posts, DMs, job applications, recruiter messages, uploads, and 
 | Latest application target already received outreach | Duplicate-contact risk exists | Wait, or find a new safe target after verification returns |
 | Local portfolio work is available | Safe fallback | Create proof, save a draft, and log the blocker honestly |
 
+## Resume checklist
+
+1. Open the recovered browser in the same real account path, not a sandbox or copied session.
+2. Verify the target page, visible account, and allowed action before clicking anything public.
+3. Check the latest application, message, and comment history so the workflow does not double-contact someone.
+4. Take one small action first, then capture the visible receipt before doing the next one.
+
 ## Why this matters
 
 Good agent work is not only about recovery. It is also about knowing what not to do. If the session cannot prove the browser, account, action boundary, and result path, the honest decision is to stop account actions and leave a clear handoff.
