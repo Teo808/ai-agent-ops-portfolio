@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Source and status handoff checklist | Matteo Stincone</title>
+  <meta name="description" content="A short checklist for AI support handoffs that need source, status, permission state, last action, and next owner.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AI support and workflow QA</div>
+      <h1>Source and status handoff checklist</h1>
+      <p class="lead">More context does not help support if nobody can tell where the answer came from, whether it is current, or who owns the next step.</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./source-notes/16-source-status-handoff-checklist.md">Markdown source</a>
+        <a href="./demo/source_status_handoff_checklist.py">Python demo</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>The checklist</h2>
+      <ul class="evidence-list">
+        <li><strong>Source:</strong> What tool, policy, document, ticket, message, or record did the agent use?</li>
+        <li><strong>Status:</strong> Is that source current, stale, blocked, missing, or waiting for approval?</li>
+        <li><strong>Permission state:</strong> Was the agent allowed to act, asked to pause, or blocked by a real checkpoint?</li>
+        <li><strong>Last action:</strong> What changed, if anything?</li>
+        <li><strong>Open work:</strong> What still needs a human or the next run?</li>
+        <li><strong>Owner:</strong> Who should check the next step?</li>
+      </ul>
+    </section>
+
+    <section class="proof">
+      <h2>Weak handoff versus useful handoff</h2>
+      <div class="proof-grid">
+        <p>Weak: "I checked the account." Better: "Checked the billing ticket and latest policy note."</p>
+        <p>Weak: "Looks good." Better: "Policy note is current. Billing ticket is still waiting on approval."</p>
+        <p>Weak: "Could not continue." Better: "Stopped because the action needed legal or account owner approval."</p>
+        <p>Weak: "User should review." Better: "Support should confirm approval, then resume from the billing step."</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Why this matters</h2>
+      <p>This is the support side of AI workflow QA. A clean handoff should reduce mystery. It should tell the next person what the agent used, what state the work is in, and what should happen next.</p>
+      <p>That habit matters for customer support, implementation, job application workflows, browser automation, and any product where an agent acts across real systems.</p>
+    </section>
+  </main>
+</body>
+</html>

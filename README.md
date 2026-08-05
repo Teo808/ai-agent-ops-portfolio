@@ -114,6 +114,12 @@ A small Python demo for separating installed tool health from active session pro
 
 A short runbook for handling browser or automation failures before a workflow touches a real account.
 
+### 16. Source and status handoff checklist
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/source-status-handoff-checklist.html) - [Python script](./demo/source_status_handoff_checklist.py) - [Markdown source](./source-notes/16-source-status-handoff-checklist.md)
+
+A short checklist for making AI support handoffs prove source, status, permission state, last action, open work, and next owner.
+
 ## Run The Demo
 
 ```
@@ -124,6 +130,7 @@ python demo/browser_attach_health_check.py --all
 python demo/application_run_gate.py --all
 python demo/session_tool_health.py --all
 python demo/real_account_incident_runbook.py --all
+python demo/source_status_handoff_checklist.py --all
 ```
 
 No dependencies. Standard library only.
@@ -145,7 +152,8 @@ Five minutes:
 11. [Application run gate demo](https://teo808.github.io/ai-agent-ops-portfolio/application-run-gate.html) - how I decide whether a job lead should be applied to, staged, saved, or rejected
 12. [Session tool health demo](https://teo808.github.io/ai-agent-ops-portfolio/session-tool-health.html) - how I separate server health from active session proof before a real-account action
 13. [Real-account automation incident runbook](https://teo808.github.io/ai-agent-ops-portfolio/real-account-automation-incident-runbook.html) - how I block risky account actions and leave a clean repair path
-14. Run the demo scripts
+14. [Source and status handoff checklist](https://teo808.github.io/ai-agent-ops-portfolio/source-status-handoff-checklist.html) - how I keep support handoffs tied to source, status, permission state, and next owner
+15. Run the demo scripts
 
 ---
 
