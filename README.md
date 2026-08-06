@@ -120,6 +120,12 @@ A short runbook for handling browser or automation failures before a workflow to
 
 A short checklist for making AI support handoffs prove source, status, permission state, last action, open work, and next owner.
 
+### 17. Cross-agent handoff checklist
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/cross-agent-handoff-checklist.html) - [Python script](./demo/cross_agent_handoff_checklist.py) - [Markdown source](./source-notes/17-cross-agent-handoff-checklist.md)
+
+A practical checklist for passing a support or workflow case from one agent to another without making the customer repeat the story. It checks the current goal, state, actions already taken, open risk, next owner, and the first safe resume check.
+
 ## Run The Demo
 
 ```
@@ -131,6 +137,7 @@ python demo/application_run_gate.py --all
 python demo/session_tool_health.py --all
 python demo/real_account_incident_runbook.py --all
 python demo/source_status_handoff_checklist.py --all
+python demo/cross_agent_handoff_checklist.py --all
 ```
 
 No dependencies. Standard library only.
@@ -153,7 +160,8 @@ Five minutes:
 12. [Session tool health demo](https://teo808.github.io/ai-agent-ops-portfolio/session-tool-health.html) - how I separate server health from active session proof before a real-account action
 13. [Real-account automation incident runbook](https://teo808.github.io/ai-agent-ops-portfolio/real-account-automation-incident-runbook.html) - how I block risky account actions and leave a clean repair path
 14. [Source and status handoff checklist](https://teo808.github.io/ai-agent-ops-portfolio/source-status-handoff-checklist.html) - how I keep support handoffs tied to source, status, permission state, and next owner
-15. Run the demo scripts
+15. [Cross-agent handoff checklist](https://teo808.github.io/ai-agent-ops-portfolio/cross-agent-handoff-checklist.html) - how I pass a live support or workflow case between agents without losing state
+16. Run the demo scripts
 
 ---
 

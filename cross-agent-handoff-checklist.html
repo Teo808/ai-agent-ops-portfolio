@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cross-agent handoff checklist | Matteo Stincone</title>
+  <meta name="description" content="A practical checklist for passing a support or workflow case between agents without losing current state.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AI support and workflow QA</div>
+      <h1>Cross-agent handoff checklist</h1>
+      <p class="lead">The next agent should not make the customer repeat the whole story. It needs the current goal, state, action receipt, open risk, owner, and first safe resume check.</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./source-notes/17-cross-agent-handoff-checklist.md">Markdown source</a>
+        <a href="./demo/cross_agent_handoff_checklist.py">Python demo</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>The handoff</h2>
+      <ul class="evidence-list">
+        <li><strong>Current goal:</strong> What is the user trying to get done now?</li>
+        <li><strong>State:</strong> What has already happened, and what is the current status?</li>
+        <li><strong>Actions taken:</strong> What did the previous agent read, change, or send?</li>
+        <li><strong>Open risk:</strong> What could be wrong, stale, blocked, or unsafe to assume?</li>
+        <li><strong>Next owner:</strong> Which person or system owns the next step?</li>
+        <li><strong>Resume check:</strong> What should the next agent verify before acting?</li>
+      </ul>
+    </section>
+
+    <section class="proof">
+      <h2>Weak handoff versus useful handoff</h2>
+      <div class="proof-grid">
+        <p>Weak: "Help with the account." Better: "Resolve the duplicate charge without sending a refund twice."</p>
+        <p>Weak: "Issue is being handled." Better: "One refund request is pending. No second refund was sent."</p>
+        <p>Weak: "Nothing major." Better: "The payment record is still waiting on approval."</p>
+        <p>Weak: "Continue from here." Better: "Confirm the pending request before changing the payment record."</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Why this matters</h2>
+      <p>Shared context is useful only when it is current and easy to verify. A clean handoff gives the next agent a starting point, a boundary, and a clear reason to pause when the state is uncertain.</p>
+      <p>That applies to customer support, implementation work, browser automation, and any workflow that moves between tools or agents.</p>
+    </section>
+  </main>
+</body>
+</html>
