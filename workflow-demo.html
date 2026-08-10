@@ -18,11 +18,10 @@
 
     <header class="page-hero">
       <div class="eyebrow">Case Study 03</div>
-      <h1>I turn vague agent failures into something someone can actually debug.</h1>
+      <h1>I turn vague agent failures into useful debugging paths.</h1>
       <p class="lead">
-        This small Python demo takes a deployment/support scenario, classifies the
-        likely issue, chooses practical checks, and produces a report another person
-        could actually use.
+        This small Python demo accepts a deployment or support scenario, classifies
+        the likely issue, chooses practical checks, and produces an operator-ready report.
       </p>
     </header>
 
@@ -47,24 +46,25 @@
 
     <section class="content-band">
       <h2>Example Output</h2>
-      <pre><code>Scenario:  Hermes Agent returns stale context after an MCP config change
-Category:  memory_scope
-Priority:  high
+      <pre><code>Scenario: Hermes Agent cannot recall project-specific setup notes after a tool config change.
+Likely category: memory_scope
+Priority: high
 
-Symptoms:
-  Recall pulls broad personal history instead of the active project.
-  Agent answers a setup question with a fix from a different project.
-  Behavior changed right after a recent MCP/provider reconfiguration.
+Recommended checks:
+- Confirm the active project or container scope.
+- Run the same recall query with and without profile context.
+- Check whether stale global memories outrank project memories.
+- Verify the final answer cites the project-specific source.</code></pre>
+    </section>
 
-Environment:
-  Windows PowerShell
-  Hermes Agent
-  Supermemory-style project memory
-  MCP tools configured
-
-Checks:
-  1. Confirm the active project scope -- check which container the agent is reading from.
-  2. Run the same recall query with and without profile context loaded.
-  3. Check whether stale global memories are outranking project-scoped ones.
-  4. Verify the response cites a project-specific source, not personal history.
-  5. Test whether the behavior is consistent or depends on how the quer
+    <section class="callout">
+      <h2>Hiring Signal</h2>
+      <p>
+        This is the operational muscle I would bring to an AI agent team: do not guess,
+        do not hand-wave, and do not hide uncertainty. Route the issue, run the
+        smallest useful check, and write the result so the next person can move faster.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

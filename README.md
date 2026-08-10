@@ -1,6 +1,6 @@
-# AI Agent Operations Portfolio - Matteo Stincone
+# AI agent operations portfolio | Matteo Stincone
 
-Portfolio for Forward Deployed Engineer / AI Agent Operations roles. Focused on the practical deployment layer: setup, tools, memory, browser workflows, provider routing, debugging, and documentation.
+Portfolio for AI support, workflow operations, technical support, implementation support, and Forward Deployed Engineer roles. The work focuses on the practical layer around AI systems: setup, tools, memory, browser workflows, provider behavior, debugging, and documentation.
 
 **Live site:** https://teo808.github.io/ai-agent-ops-portfolio/
 
@@ -8,11 +8,11 @@ Portfolio for Forward Deployed Engineer / AI Agent Operations roles. Focused on 
 
 ## What this is
 
-Applying to Nous Research for the Forward Deployed Engineer role. Hermes Agent specifically is the reason. This portfolio is built around that work: deploying agents, testing real workflows, finding what breaks, and writing the fix clearly enough for the next person to follow.
+This portfolio shows how I test AI workflows in real environments, find the layer that failed, and write the next safe step clearly enough for another person to follow.
 
-Not the ML research angle. The angle is that these systems get used in real environments, and that layer gets messy fast. Setup is fragile, docs leave things out, and the first few failures do not always turn into a clear path for the next person. That is what this portfolio addresses.
+I am not presenting myself as an ML researcher. My lane is the practical work around AI products: setup, tool and provider troubleshooting, workflow QA, browser automation, support handoffs, and documentation that holds up after the demo ends.
 
-## Role Alignment
+## Role alignment
 
 | What the role needs | What I can show |
 | --- | --- |
@@ -126,6 +126,12 @@ A short checklist for making AI support handoffs prove source, status, permissio
 
 A practical checklist for passing a support or workflow case from one agent to another without making the customer repeat the story. It checks the current goal, state, actions already taken, open risk, next owner, and the first safe resume check.
 
+### 18. Workflow reliability case study
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/workflow-reliability-case-study.html)
+
+A featured case study showing how I diagnosed a locked real-account browser workflow, protected the user's normal session, removed only stale scheduled owners, and verified recovery with an operator receipt.
+
 ## Run The Demo
 
 ```
@@ -147,21 +153,12 @@ No dependencies. Standard library only.
 Five minutes:
 
 1. [Candidate Profile](https://teo808.github.io/ai-agent-ops-portfolio/candidate-profile.html) - positioning and what I can point to
-2. [Setup Notes](https://teo808.github.io/ai-agent-ops-portfolio/setup-notes.html) - how I think about Hermes Agent deployment testing
-3. [Browser automation preflight](https://teo808.github.io/ai-agent-ops-portfolio/browser-automation-preflight.html) - how I check account safety before real browser actions
-4. [Support handoff signal log](https://teo808.github.io/ai-agent-ops-portfolio/support-handoff-signal.html) - what recent workflow QA engagement keeps pointing back to
-5. [Social signal triage loop](https://teo808.github.io/ai-agent-ops-portfolio/social-signal-triage.html) - how I decide whether to reply, wait, or turn a signal into proof
-6. [Verified no-action rule](https://teo808.github.io/ai-agent-ops-portfolio/verified-no-action.html) - how I avoid claiming sends, posts, or applications when proof is missing
-7. [Relationship outreach cooldown rule](https://teo808.github.io/ai-agent-ops-portfolio/outreach-cooldown-rule.html) - how I avoid repeat-contacting the same person or company when waiting is the better move
-8. [Browser preflight decision demo](https://teo808.github.io/ai-agent-ops-portfolio/preflight-decision-demo.html) - a small executable send or stop check
-9. [Action receipt report demo](https://teo808.github.io/ai-agent-ops-portfolio/action-receipt-report.html) - how I prove what actually happened after a risky workflow action
-10. [Browser attach health check demo](https://teo808.github.io/ai-agent-ops-portfolio/browser-attach-health-check.html) - how I separate browser health, target-page proof, account proof, and safety blockers
-11. [Application run gate demo](https://teo808.github.io/ai-agent-ops-portfolio/application-run-gate.html) - how I decide whether a job lead should be applied to, staged, saved, or rejected
-12. [Session tool health demo](https://teo808.github.io/ai-agent-ops-portfolio/session-tool-health.html) - how I separate server health from active session proof before a real-account action
-13. [Real-account automation incident runbook](https://teo808.github.io/ai-agent-ops-portfolio/real-account-automation-incident-runbook.html) - how I block risky account actions and leave a clean repair path
-14. [Source and status handoff checklist](https://teo808.github.io/ai-agent-ops-portfolio/source-status-handoff-checklist.html) - how I keep support handoffs tied to source, status, permission state, and next owner
-15. [Cross-agent handoff checklist](https://teo808.github.io/ai-agent-ops-portfolio/cross-agent-handoff-checklist.html) - how I pass a live support or workflow case between agents without losing state
-16. Run the demo scripts
+2. [Workflow reliability case study](https://teo808.github.io/ai-agent-ops-portfolio/workflow-reliability-case-study.html) - a real diagnosis, scoped repair, and verification receipt
+3. [Setup Notes](https://teo808.github.io/ai-agent-ops-portfolio/setup-notes.html) - how I think about Hermes Agent deployment testing
+4. [Browser automation preflight](https://teo808.github.io/ai-agent-ops-portfolio/browser-automation-preflight.html) - how I check account safety before real browser actions
+5. [Action receipt report demo](https://teo808.github.io/ai-agent-ops-portfolio/action-receipt-report.html) - how I prove what actually happened after a risky workflow action
+6. [Cross-agent handoff checklist](https://teo808.github.io/ai-agent-ops-portfolio/cross-agent-handoff-checklist.html) - how I pass a live support or workflow case between agents without losing state
+7. Run the demo scripts
 
 ---
 

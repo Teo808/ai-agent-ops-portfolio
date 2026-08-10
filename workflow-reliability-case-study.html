@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workflow reliability case study | Matteo Stincone</title>
+  <meta name="description" content="A practical case study in diagnosing a locked browser automation profile without touching the wrong account or claiming an unverified result.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <nav class="top-nav" aria-label="Portfolio navigation">
+      <a href="./index.html">Home</a>
+      <a href="./candidate-profile.html">Candidate profile</a>
+      <a href="./browser-attach-health-check.html">Attach health</a>
+      <a href="./real-account-automation-incident-runbook.html">Incident runbook</a>
+      <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+    </nav>
+
+    <header class="page-hero">
+      <div class="eyebrow">Featured case study / Reliability</div>
+      <h1>I don't call a browser workflow healthy just because it launched.</h1>
+      <p class="lead">
+        A scheduled real-account workflow kept reporting that Chrome was locked. The useful answer was not to retry harder. It was to prove which processes owned the profile, protect the user's normal browser, remove only stale scheduled owners, and verify the profile was actually free.
+      </p>
+    </header>
+
+    <section class="detail-grid">
+      <article class="detail-panel">
+        <span>Incident</span>
+        <h2>Multiple automation owners shared one scheduled profile.</h2>
+        <p>
+          The browser route reported "already in use" before it could inspect a tab. A retry could have interrupted another run or touched the wrong Chrome session.
+        </p>
+      </article>
+      <article class="detail-panel signal-panel">
+        <span>Result</span>
+        <h2>Stale owners removed. Zero matching processes remained.</h2>
+        <p>
+          Normal Chrome was left alone. The scheduled profile was isolated, cleaned, and verified before another run was allowed to use it.
+        </p>
+      </article>
+    </section>
+
+    <section class="content-band">
+      <h2>What I investigated</h2>
+      <ul class="evidence-list">
+        <li><strong>Reproduction:</strong> The same profile-lock error appeared across application, outreach, and portfolio runs.</li>
+        <li><strong>Ownership:</strong> Windows process command lines showed several Playwright MCP processes pointing at the same scheduled user-data directory.</li>
+        <li><strong>Boundary:</strong> The user's ordinary Chrome windows used different processes and were not treated as disposable automation state.</li>
+        <li><strong>Verification:</strong> After targeted cleanup, a second process query returned zero matching scheduled Chrome or MCP owners.</li>
+      </ul>
+    </section>
+
+    <section class="matrix-section">
+      <h2>The investigation pattern</h2>
+      <div class="matrix">
+        <div><strong>1. Read the error</strong><span>Capture the exact profile path and the stage where the workflow stopped.</span></div>
+        <div><strong>2. Trace ownership</strong><span>Inspect process names, parent processes, command lines, and start times.</span></div>
+        <div><strong>3. Protect the boundary</strong><span>Target only the scheduled profile. Never kill a normal account session by assumption.</span></div>
+        <div><strong>4. Prove recovery</strong><span>Query again and require zero matching owners before calling the route healthy.</span></div>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Operator receipt</h2>
+      <pre>{
+  "symptom": "scheduled browser profile already in use",
+  "scope": "Copy A scheduled automation only",
+  "risk": "interrupting a normal signed-in Chrome session",
+  "evidence": "multiple stale MCP owners shared one profile",
+  "action": "stopped exact scheduled owners only",
+  "verification": "remaining matching processes: 0",
+  "claim": "profile is free for a fresh scheduled run"
+}</pre>
+      <p>
+        This is the difference between a plausible fix and an auditable one. The receipt says what was observed, what boundary was protected, what changed, and what was verified afterward.
+      </p>
+    </section>
+
+    <section class="proof">
+      <h2>Why this matters in AI agent operations</h2>
+      <div class="proof-grid">
+        <p>Agents often fail at the environment boundary, not the model boundary.</p>
+        <p>A retry can be riskier than a pause when real accounts are involved.</p>
+        <p>Support needs a reproducible diagnosis, not a confident guess.</p>
+        <p>Good handoffs leave the next operator a safe resume check.</p>
+      </div>
+    </section>
+
+    <section class="callout">
+      <h2>The qualification this demonstrates</h2>
+      <p>
+        I can move from a vague automation failure to a scoped diagnosis, a safe repair, and a verification receipt. That is the work between an agent demo and a dependable workflow in a real environment.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
