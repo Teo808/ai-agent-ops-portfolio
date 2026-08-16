@@ -132,6 +132,12 @@ A practical checklist for passing a support or workflow case from one agent to a
 
 A featured case study showing how I diagnosed a locked real-account browser workflow, protected the user's normal session, removed only stale scheduled owners, and verified recovery with an operator receipt.
 
+### 19. AI workflow QA test matrix
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/ai-workflow-qa-test-matrix.html) - [Python script](./demo/ai_workflow_qa_test_matrix.py) - [Markdown source](./source-notes/18-ai-workflow-qa-test-matrix.md)
+
+A small test matrix for source freshness, permission boundaries, missing fields, interrupted sessions, and human approval. It focuses on the evidence and recovery path around an AI support workflow, not only the final answer.
+
 ## Run The Demo
 
 ```
@@ -144,6 +150,7 @@ python demo/session_tool_health.py --all
 python demo/real_account_incident_runbook.py --all
 python demo/source_status_handoff_checklist.py --all
 python demo/cross_agent_handoff_checklist.py --all
+python demo/ai_workflow_qa_test_matrix.py --all
 ```
 
 No dependencies. Standard library only.
