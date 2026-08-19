@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hermes run triage kit | Matteo Stincone</title>
+  <meta name="description" content="A small Python tool for reviewing Hermes Agent runs, finding failure signals, and keeping proof of the real end state.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Hermes Agent operator QA</div>
+      <h1>Hermes run triage kit</h1>
+      <p class="lead">A small tool for answering a simple question: did the agent actually finish the user's job, and what broke along the way?</p>
+      <div class="actions" aria-label="Primary links">
+        <a href="./index.html">Portfolio home</a>
+        <a href="./candidate-profile.html">Candidate profile</a>
+        <a href="./source-notes/19-hermes-run-triage-kit.md">Project notes</a>
+        <a href="./demo/hermes_run_triage.py">Python source</a>
+        <a href="https://github.com/Teo808/ai-agent-ops-portfolio">GitHub repo</a>
+      </div>
+    </section>
+
+    <section class="detail-grid">
+      <article class="detail-panel">
+        <span>The problem</span>
+        <h2>A tool call is not the same thing as a completed task.</h2>
+        <p>Hermes runs can touch browsers, files, MCP tools, memory, providers, and real account boundaries. A run can sound successful while the final user outcome is still unverified.</p>
+      </article>
+      <article class="detail-panel signal-panel">
+        <span>The response</span>
+        <h2>Turn the messy run into a report someone can act on.</h2>
+        <p>The triage kit reads a JSONL export or plain text log and produces a Markdown report with findings, risk level, tools seen, likely retry loops, and the next check.</p>
+      </article>
+    </section>
+
+    <section class="content-band">
+      <h2>What it checks</h2>
+      <ul class="evidence-list">
+        <li>Stale browser references and recovery attempts</li>
+        <li>Tool errors, exceptions, and failed calls</li>
+        <li>Timeouts and deadline failures</li>
+        <li>Authentication and permission problems</li>
+        <li>Rate limits and quota signals</li>
+        <li>Possible secret or credential leakage</li>
+        <li>Verified success lines and final-state evidence</li>
+        <li>Repeated tool calls that may indicate a retry loop</li>
+      </ul>
+    </section>
+
+    <section class="proof">
+      <h2>What I verified</h2>
+      <div class="proof-grid">
+        <p>Standard-library Python only</p>
+        <p>Four unit tests passed locally</p>
+        <p>JSONL and plain-text input</p>
+        <p>Markdown report output</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <h2>Why I built it</h2>
+      <p>I have been using Hermes for real workflows, so the failure modes are not theoretical. Browser refs go stale. Uploads fail. Authentication changes. A workflow stops at a judgment call. The useful response is not to hide the friction. It is to record what happened, separate the failure layer, and leave the next operator a safe place to resume.</p>
+      <p>This is a small proof item, not a claim that the whole problem is solved. It shows the kind of operator-side work I can do: notice a repeated failure, write a focused tool, test it, and make the result easy for someone else to inspect.</p>
+    </section>
+
+    <section class="content-band">
+      <h2>Run it</h2>
+      <pre><code>python demo/hermes_run_triage.py input.jsonl --title "Hermes Run" --out report.md</code></pre>
+      <p>The source is dependency free and designed to be easy to inspect.</p>
+    </section>
+  </main>
+</body>
+</html>

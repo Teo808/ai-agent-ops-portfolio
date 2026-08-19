@@ -1,0 +1,6 @@
+{"role":"user","content":"Send this approved DM."}
+{"role":"tool","name":"mcp__playwright__browser_type","content":"Error: Ref f1e3544 not found in the current page snapshot. Try capturing new snapshot."}
+{"role":"tool","name":"mcp__playwright__browser_snapshot","content":"Snapshot captured. Textbox Message active."}
+{"role":"tool","name":"mcp__playwright__browser_type","content":"Filled dm-composer-textarea."}
+{"role":"tool","name":"mcp__playwright__browser_click","content":"Clicked dm-composer-send-button."}
+{"role":"tool","name":"mcp__playwright__browser_evaluate","content":"Verified sent message appeared in thread. Textbox empty. success"}

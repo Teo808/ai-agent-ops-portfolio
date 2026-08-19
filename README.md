@@ -138,6 +138,12 @@ A featured case study showing how I diagnosed a locked real-account browser work
 
 A small test matrix for source freshness, permission boundaries, missing fields, interrupted sessions, and human approval. It focuses on the evidence and recovery path around an AI support workflow, not only the final answer.
 
+### 20. Hermes run triage kit
+
+[View on the live site](https://teo808.github.io/ai-agent-ops-portfolio/hermes-run-triage-kit.html) - [Python script](./demo/hermes_run_triage.py) - [Project notes](./source-notes/19-hermes-run-triage-kit.md)
+
+A small standard-library Python tool that turns a Hermes session export or plain-text log into a Markdown operator QA report. It checks stale browser refs, tool errors, timeouts, permission issues, rate limits, possible secret leakage, retry loops, and verified success lines.
+
 ## Run The Demo
 
 ```
@@ -151,6 +157,7 @@ python demo/real_account_incident_runbook.py --all
 python demo/source_status_handoff_checklist.py --all
 python demo/cross_agent_handoff_checklist.py --all
 python demo/ai_workflow_qa_test_matrix.py --all
+python demo/hermes_run_triage.py examples/hermes_sample_session.jsonl --title "Hermes Run" --out report.md
 ```
 
 No dependencies. Standard library only.
@@ -165,7 +172,8 @@ Five minutes:
 4. [Browser automation preflight](https://teo808.github.io/ai-agent-ops-portfolio/browser-automation-preflight.html) - how I check account safety before real browser actions
 5. [Action receipt report demo](https://teo808.github.io/ai-agent-ops-portfolio/action-receipt-report.html) - how I prove what actually happened after a risky workflow action
 6. [Cross-agent handoff checklist](https://teo808.github.io/ai-agent-ops-portfolio/cross-agent-handoff-checklist.html) - how I pass a live support or workflow case between agents without losing state
-7. Run the demo scripts
+7. [Hermes run triage kit](https://teo808.github.io/ai-agent-ops-portfolio/hermes-run-triage-kit.html) - how I turn a messy session log into a focused operator QA report
+8. Run the demo scripts
 
 ---
 
